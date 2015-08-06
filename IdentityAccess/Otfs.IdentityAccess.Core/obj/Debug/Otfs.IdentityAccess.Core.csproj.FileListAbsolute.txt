@@ -1,0 +1,9 @@
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.IdentityAccess.Core\bin\Debug\Otfs.IdentityAccess.Core.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.IdentityAccess.Core\bin\Debug\Otfs.IdentityAccess.Core.pdb
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.IdentityAccess.Core\obj\Debug\Otfs.IdentityAccess.Core.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.IdentityAccess.Core\obj\Debug\Otfs.IdentityAccess.Core.pdb
+\\psf\Home\Documents\projetos\dashboard.set.govrn\IdentityAccess\Otfs.IdentityAccess.Core\bin\Debug\Otfs.IdentityAccess.Core.dll
+\\psf\Home\Documents\projetos\dashboard.set.govrn\IdentityAccess\Otfs.IdentityAccess.Core\bin\Debug\Otfs.IdentityAccess.Core.pdb
+\\psf\Home\Documents\projetos\dashboard.set.govrn\IdentityAccess\Otfs.IdentityAccess.Core\obj\Debug\Otfs.IdentityAccess.Core.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\projetos\dashboard.set.govrn\IdentityAccess\Otfs.IdentityAccess.Core\obj\Debug\Otfs.IdentityAccess.Core.dll
+\\psf\Home\Documents\projetos\dashboard.set.govrn\IdentityAccess\Otfs.IdentityAccess.Core\obj\Debug\Otfs.IdentityAccess.Core.pdb

@@ -1,0 +1,1 @@
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.ProjectManagement.Data\obj\x64\Debug\Otfs.ProjectManagement.Data.csprojResolveAssemblyReference.cache

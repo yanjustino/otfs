@@ -1,0 +1,57 @@
+﻿@model OpenTfsPortal.Models.DashboardHoraViewModel
+
+@{
+   ViewBag.Title = "DashboardHoras";
+}
+
+<h3>
+   <span class="glyphicon glyphicon-calendar"></span>
+   DASHBOARD DE HORAS
+</h3>
+<hr />
+<a style="text-decoration: none" href="@Url.Action("Desenvolvedor", "Dashboard")">
+   <span class="glyphicon glyphicon-backward"></span>
+   Voltar
+</a>
+<table class="table">
+   <tr>
+      <th>
+         Data
+      </th>
+      <th>
+         Horas em projeto
+      </th>
+      <th>
+         Horas de Incidente
+      </th>
+      <th>
+         Registro de Ponto
+      </th>
+      <th>
+         Total de horas
+      </th>
+   </tr>
+
+   @foreach (var item in Model.RegistrosHora)
+   {
+      var data = item.Data.ToShortDateString();
+      <tr>
+         <td align="center">
+            @data
+         </td>
+         <td align="right">
+            @Html.DisplayFor(modelItem => item.HorasProjetos)
+         </td>
+         <td align="right">
+            @Html.DisplayFor(modelItem => item.HorasIncidente)
+         </td>
+         <td align="right">
+            @Html.DisplayFor(modelItem => item.HoraPonto)
+         </td>
+         <td align="right">
+            @Html.DisplayFor(modelItem => item.HorasTotais)
+         </td>
+      </tr>
+   }
+
+</table>

@@ -1,0 +1,30 @@
+﻿html, body {
+    font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+hr{
+    height:1px; 
+    background-color:gray;
+    border:0;
+}
+
+table{
+    width:100%;
+}
+   
+
+table tr th {
+    background-color:black;
+    color:white;
+}
+
+table tr th, table tr td {
+    border:1px solid black;
+    border-collapse:collapse;
+    margin:0;
+}
+
+#cabecalho_geral,footer {
+    display:none;
+}
+

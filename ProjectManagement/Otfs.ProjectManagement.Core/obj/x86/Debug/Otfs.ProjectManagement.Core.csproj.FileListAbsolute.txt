@@ -1,0 +1,4 @@
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.ProjectManagement.Core\bin\x86\Debug\Otfs.ProjectManagement.Core.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.ProjectManagement.Core\bin\x86\Debug\Otfs.ProjectManagement.Core.pdb
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.ProjectManagement.Core\obj\x86\Debug\Otfs.ProjectManagement.Core.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.ProjectManagement.Core\obj\x86\Debug\Otfs.ProjectManagement.Core.pdb

@@ -1,0 +1,125 @@
+﻿@model OpenTfsPortal.Models.DashboardAuditorViewModel
+@{
+    ViewBag.Title = "Dashboard Auditor";
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<aside>
+    <a href="@Url.Action("Index", "ProjectManagement")" class="btn btn-link">
+        <span class="glyphicon glyphicon-tasks"></span>&nbsp;LISTA DE PROJETOS
+    </a>
+    <hr>
+    <h4>
+        <small>ITERAÇÃO</small> <br>
+        @Model.Interation.ToUpper()
+    </h4>
+    <hr>
+    <h5>
+        <small>Data início</small><br>
+        @Model.DataInicioSprintFormatada
+    </h5>
+    <h5>
+        <small>Data final</small><br>
+        @Model.DataFimSprintFormatada
+    </h5>
+    <table class="table">
+        <thead>
+            <tr>
+                <td align="center">
+                    <h5 style="margin:0">
+                        <small>PENDENTES</small>
+                    </h5>
+                </td>
+                <td align="center">
+                    <h5 style="margin:0">
+                        <small>ANDAMENTO</small>
+                    </h5>
+                </td>
+                <td align="center">
+                    <h5 style="margin:0">
+                        <small>CONCLUÍDAS</small>
+                    </h5>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">
+                    <h2 style="margin:0">@Model.PercentualTarefasPendentes%</h2>
+                </td>
+                <td align="center">
+                    <h2 style="margin:0">@Model.PercentualTarefasEmaAndamento%</h2>
+                </td>
+                <td align="center">
+                    <h2 style="margin:0">@Model.PercentualTarefasConcluidas%</h2>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</aside>
+<section class="dashboard-content">
+    <article>
+        <h4>PENDENTE <br /> <small>@Model.ItemsPendentes.Count() solicitações</small></h4>
+        <hr>
+        @foreach (var item in @Model.ItemsPendentes)
+        {
+            @Html.BacklogItemInfoPanel(item)
+        }
+    </article>
+    <article>
+        <h4>EM ANDAMENTO <br /> <small>@Model.ItemsAndamento.Count() solicitações</small></h4>
+        <hr>
+        @foreach (var item in @Model.ItemsAndamento)
+        {
+            @Html.BacklogItemInfoPanel(item)
+        }
+    </article>
+    <article>
+        <h4>PARA TESTES <br /><small>@Model.ItemsComitadas.Count() solicitações</small></h4>
+        <hr>
+        @foreach (var item in @Model.ItemsComitadas)
+        {
+
+            @Html.BacklogItemWarningPanel(item)
+
+            @Html.Partial("Auditor/_tarefas_modal_aprovar", @item)
+            @Html.Partial("Auditor/_tarefas_modal_reprovar", @item)
+        }
+    </article>
+    <article>
+        <h4>PARA PUBLICAÇÃO <br /><small>@Model.ItemsParaBuild.Count() solicitações</small></h4>
+        <hr>
+        @foreach (var item in @Model.ItemsParaBuild)
+        {
+            @Html.BacklogItemDeployPanel(item)
+
+        }
+    </article>
+    <article>
+        <h4>PUBLICADO <br /><small>@Model.ItemsPublicados.Count() solicitações</small></h4>
+        <hr>
+        @foreach (var item in @Model.ItemsPublicados)
+        {
+            @Html.BacklogItemSuccessPanel(item)
+            
+            @Html.Partial("Auditor/_tarefas_modal_Concluir", @item)
+            @Html.Partial("Auditor/_tarefas_modal_reprovar", @item)
+        }
+    </article>
+    @*<article>
+        <h4>CONCLUIDOS <br /><small>@Model.ItemsConcluidos.Count() solicitações</small></h4>
+        <hr>
+        @foreach (var item in @Model.ItemsConcluidos)
+        {
+            @Html.BacklogItemDeployPanel(item)
+
+        }
+    </article>*@
+</section>
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $('a').tooltip();
+    </script>
+}

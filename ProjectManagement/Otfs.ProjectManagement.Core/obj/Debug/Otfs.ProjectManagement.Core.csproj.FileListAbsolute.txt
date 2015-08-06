@@ -1,0 +1,15 @@
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.ProjectManagement.Core\bin\Debug\Otfs.ProjectManagement.Core.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.ProjectManagement.Core\bin\Debug\Otfs.ProjectManagement.Core.pdb
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.ProjectManagement.Core\obj\Debug\Otfs.ProjectManagement.Core.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.ProjectManagement.Core\obj\Debug\Otfs.ProjectManagement.Core.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.ProjectManagement.Core\obj\Debug\Otfs.ProjectManagement.Core.pdb
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\ProjectManagement\Otfs.ProjectManagement.Core\obj\Debug\Otfs.ProjectManagement.Core.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\ProjectManagement\Otfs.ProjectManagement.Core\obj\Debug\Otfs.ProjectManagement.Core.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\ProjectManagement\Otfs.ProjectManagement.Core\bin\Debug\Otfs.ProjectManagement.Core.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\ProjectManagement\Otfs.ProjectManagement.Core\bin\Debug\Otfs.ProjectManagement.Core.pdb
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\ProjectManagement\Otfs.ProjectManagement.Core\obj\Debug\Otfs.ProjectManagement.Core.pdb
+\\psf\Home\Documents\projetos\dashboard.set.govrn\ProjectManagement\Otfs.ProjectManagement.Core\bin\Debug\Otfs.ProjectManagement.Core.dll
+\\psf\Home\Documents\projetos\dashboard.set.govrn\ProjectManagement\Otfs.ProjectManagement.Core\bin\Debug\Otfs.ProjectManagement.Core.pdb
+\\psf\Home\Documents\projetos\dashboard.set.govrn\ProjectManagement\Otfs.ProjectManagement.Core\obj\Debug\Otfs.ProjectManagement.Core.dll
+\\psf\Home\Documents\projetos\dashboard.set.govrn\ProjectManagement\Otfs.ProjectManagement.Core\obj\Debug\Otfs.ProjectManagement.Core.pdb
+\\psf\Home\Documents\projetos\dashboard.set.govrn\ProjectManagement\Otfs.ProjectManagement.Core\obj\Debug\Otfs.ProjectManagement.Core.csprojResolveAssemblyReference.cache

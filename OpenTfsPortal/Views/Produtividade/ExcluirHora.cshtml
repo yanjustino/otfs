@@ -1,0 +1,57 @@
+﻿@model Otfs.GestaoHoras.Core.Domain.Model.LancamentoHora
+
+@{
+   ViewBag.Title = "Excluir Lançamento";
+}
+
+<h3>
+   <span class="glyphicon glyphicon-trash"></span>
+   EXCLUIR LANÇAMENTO
+</h3>
+
+<div>
+   <hr />
+   Tarefa de número : @Html.DisplayFor(model => model.TaskId)
+   <hr />
+   <dl class="dl-horizontal">
+
+      <dt>
+         @Html.DisplayNameFor(model => model.DataLancamento)
+      </dt>
+
+      <dd>
+         @Html.DisplayFor(model => model.DataLancamento)
+      </dd>
+
+      <dt>
+         @Html.DisplayNameFor(model => model.HoraTrabalhada)
+      </dt>
+
+      <dd>
+         @Html.DisplayFor(model => model.HoraTrabalhada)
+      </dd>
+
+      <dt>
+         @Html.DisplayNameFor(model => model.Historico)
+      </dt>
+
+      <dd>
+         @Html.DisplayFor(model => model.Historico)
+      </dd>
+
+   </dl>
+   <hr />
+
+   @using (Html.BeginForm("ExcluirHora", "Produtividade", new { taskId = Model.TaskId, title = "" }, FormMethod.Post))
+   {
+      @Html.AntiForgeryToken()
+
+      <div class="form-actions no-color">
+         <input type="submit" value="Excluir" class="btn btn-danger" /> |
+         <a style="text-decoration: none" href="@Url.Action("ListarHoras", new { taskId = @Model.TaskId, title = string.Empty })">
+            <span class="glyphicon glyphicon-backward"></span>
+            Voltar
+         </a>
+      </div>
+   }
+</div>

@@ -1,0 +1,55 @@
+﻿@{
+   ViewBag.Title = "Login";
+}
+
+<div class="container">
+
+   <div class="page-header" id="banner">
+      <div class="row">
+         <div class="col-lg-8 col-md-7 col-sm-6">
+            <h1>Login</h1>
+         </div>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="col-lg-6">
+         <div class="well bs-component">
+            @using (Html.BeginForm("Login", "IdentityAccess", FormMethod.Post, new { @class = "form-horizontal" }))
+            {
+               @Html.AntiForgeryToken()
+
+               <fieldset>
+                  <legend>Informe seus dados para continuar...</legend>
+
+                  <div class="form-group">
+                     <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                     <input type="text" id="inputUser" name="inputUser" class="form-control input-lg" placeholder="Email" required="" autofocus="">
+                  </div>
+                  <div class="form-group">
+                     <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                     <input type="password" id="inputPassword" name="inputPassword" class="form-control input-lg" placeholder="Password" required="">
+                  </div>
+
+                  <div class="form-group">
+                     <div class="col-lg-10 col-lg-offset-2">
+                        <button type="submit" class="btn btn-lg btn-primary">Entrar</button>
+                     </div>
+                  </div>
+               </fieldset>
+            }
+         </div>
+      </div>
+      <div class="col-lg-6">
+         <div class="well bs-component">
+            <h4>Informações opcionais para esquecimento de senha ou cadastramento de usuários</h4>
+            <br>
+            <p>Lorem Ipsum é simplesmente <a href="#">uma simulação de texto</a> da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. </p>
+         </div>
+      </div>
+   </div>
+
+
+
+</div>
+

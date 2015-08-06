@@ -1,0 +1,63 @@
+﻿@model OpenTfsPortal.Models.ListaHorasViewModel
+
+@{
+   ViewBag.Title = "ListarHoras";
+}
+
+<h3>
+   <span class="glyphicon glyphicon-calendar"></span>&nbsp;
+   HORAS TRABALHADAS NA TAREFA @Model.TaskId
+</h3>
+<hr />
+<p>
+   <a style="text-decoration: none" href="@Url.Action("LancarHora", new { taskId = @Model.TaskId, title = @Model.Title })">
+      <span class="glyphicon glyphicon-time"></span>
+      Novo Lançamento
+   </a>
+   &nbsp;
+   <a style="text-decoration: none" href="@Url.Action("Desenvolvedor", "Dashboard")">
+      <span class="glyphicon glyphicon-backward"></span>
+      Voltar
+   </a>
+</p>
+<table class="table">
+   <tr>
+      <th>
+         @Html.DisplayName("Data Lançamento")
+      </th>
+      <th>
+         @Html.DisplayName("Qtde. Horas")
+      </th>
+      <th>
+         @Html.DisplayName("Historico")
+      </th>
+      <th></th>
+   </tr>
+
+   @foreach (var item in Model.HorasLancadas)
+   {
+      var datalancamento = item.DataLancamento.ToShortDateString();
+      <tr>
+         <td width="130">
+            @datalancamento
+         </td>
+         <td width="100">
+            @Html.DisplayFor(modelItem => item.HoraTrabalhada)
+         </td>
+         <td>
+            @Html.DisplayFor(modelItem => item.Historico)
+         </td>
+         <td width="250">
+            <a style="text-decoration: none" href="@Url.Action("EditarHora", new { id = item.Id, title = @Model.Title })">
+               <span class="glyphicon glyphicon-edit"></span>
+               Editar
+            </a>
+            &nbsp;
+            <a style="text-decoration: none" href="@Url.Action("ExcluirHora", new { id = item.Id })">
+               <span class="glyphicon glyphicon-trash"></span>
+               Excluir
+            </a>
+         </td>
+      </tr>
+   }
+</table>

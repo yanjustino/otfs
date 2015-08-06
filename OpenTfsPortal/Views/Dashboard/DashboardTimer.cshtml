@@ -1,0 +1,66 @@
+﻿@model OpenTfsPortal.Models.DashboardAuditorViewModel
+@{
+   ViewBag.Title = "Dashboard Auditor";
+   Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+@section menu{
+   <div style="color:#fff">
+      <h4>@Model.Interation</h4>
+   </div>
+}
+<section class="dashboard-content">
+   <article>
+      <h4>PENDENTE <br /> <small>@Model.ItemsPendentes.Count() solicitações</small></h4>
+      <hr>
+      @foreach (var item in @Model.ItemsPendentes)
+      {
+      @Html.BacklogItemInfoPanel(item)
+      }
+   </article>
+   <article>
+      <h4>EM ANDAMENTO <br /> <small>@Model.ItemsAndamento.Count() solicitações</small></h4>
+      <hr>
+      @foreach (var item in @Model.ItemsAndamento)
+      {
+      @Html.BacklogItemInfoPanel(item)
+      }
+   </article>
+   <article>
+      <h4>PARA TESTES <br /><small>@Model.ItemsComitadas.Count() solicitações</small></h4>
+      <hr>
+      @foreach (var item in @Model.ItemsComitadas)
+      {
+
+      @Html.BacklogItemWarningPanel(item)
+
+      @Html.Partial("Auditor/_tarefas_modal_aprovar", @item)
+      @Html.Partial("Auditor/_tarefas_modal_reprovar", @item)
+      }
+   </article>
+   <article>
+      <h4>PARA PUBLICAÇÃO <br /><small>@Model.ItemsParaBuild.Count() solicitações</small></h4>
+      <hr>
+      @foreach (var item in @Model.ItemsParaBuild)
+      {
+      @Html.BacklogItemDeployPanel(item)
+
+      }
+   </article>
+   <article>
+      <h4>PUBLICADO <br /><small>@Model.ItemsPublicados.Count() solicitações</small></h4>
+      <hr>
+      @foreach (var item in @Model.ItemsPublicados)
+      {
+      @Html.BacklogItemSuccessPanel(item)
+
+      @Html.Partial("Auditor/_tarefas_modal_Concluir", @item)
+      @Html.Partial("Auditor/_tarefas_modal_reprovar", @item)
+      }
+   </article>
+</section>
+@section scripts{
+   @Scripts.Render("~/bundles/jqueryval")
+   <script>
+      $('a').tooltip();
+   </script>
+}

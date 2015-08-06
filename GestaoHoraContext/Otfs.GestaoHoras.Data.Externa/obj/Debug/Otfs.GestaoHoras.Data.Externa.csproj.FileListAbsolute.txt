@@ -1,0 +1,14 @@
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Data.Externa\bin\Debug\Otfs.GestaoHoras.Data.Externa.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Data.Externa\bin\Debug\Otfs.GestaoHoras.Data.Externa.pdb
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Data.Externa\bin\Debug\Otfs.GestaoHoras.Core.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Data.Externa\bin\Debug\Otfs.GestaoHoras.Core.pdb
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Data.Externa\obj\Debug\Otfs.GestaoHoras.Data.Externa.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Data.Externa\obj\Debug\Otfs.GestaoHoras.Data.Externa.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Data.Externa\obj\Debug\Otfs.GestaoHoras.Data.Externa.pdb
+\\psf\Home\Documents\projetos\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Data.Externa\bin\Debug\Otfs.GestaoHoras.Data.Externa.dll
+\\psf\Home\Documents\projetos\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Data.Externa\bin\Debug\Otfs.GestaoHoras.Data.Externa.pdb
+\\psf\Home\Documents\projetos\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Data.Externa\bin\Debug\Otfs.GestaoHoras.Core.dll
+\\psf\Home\Documents\projetos\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Data.Externa\bin\Debug\Otfs.GestaoHoras.Core.pdb
+\\psf\Home\Documents\projetos\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Data.Externa\obj\Debug\Otfs.GestaoHoras.Data.Externa.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\projetos\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Data.Externa\obj\Debug\Otfs.GestaoHoras.Data.Externa.dll
+\\psf\Home\Documents\projetos\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Data.Externa\obj\Debug\Otfs.GestaoHoras.Data.Externa.pdb

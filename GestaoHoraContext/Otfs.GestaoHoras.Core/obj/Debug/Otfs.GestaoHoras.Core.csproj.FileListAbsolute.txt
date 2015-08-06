@@ -1,0 +1,8 @@
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Core\bin\Debug\Otfs.GestaoHoras.Core.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Core\bin\Debug\Otfs.GestaoHoras.Core.pdb
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Core\obj\Debug\Otfs.GestaoHoras.Core.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Core\obj\Debug\Otfs.GestaoHoras.Core.pdb
+\\psf\Home\Documents\projetos\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Core\bin\Debug\Otfs.GestaoHoras.Core.dll
+\\psf\Home\Documents\projetos\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Core\bin\Debug\Otfs.GestaoHoras.Core.pdb
+\\psf\Home\Documents\projetos\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Core\obj\Debug\Otfs.GestaoHoras.Core.dll
+\\psf\Home\Documents\projetos\dashboard.set.govrn\GestaoHoraContext\Otfs.GestaoHoras.Core\obj\Debug\Otfs.GestaoHoras.Core.pdb

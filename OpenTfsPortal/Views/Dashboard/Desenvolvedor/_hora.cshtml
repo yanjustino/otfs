@@ -1,0 +1,62 @@
+﻿@model OpenTfsPortal.Models.LancamentoHoraViewModel
+
+@using (Html.BeginForm("LancarHora", "Produtividade", FormMethod.Post))
+{
+   @Html.AntiForgeryToken()
+   
+   var modelid = "ModelLancarHora" + @Model.TaskId;
+
+   <div class="modal fade" id="@modelid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+               <h2 class="modal-title" id="myModalLabel">
+
+                  @*título da tarefa*@
+                  Lançamento de Horas <br />
+                  <small>
+                     Na tarefa @Model.TaskId
+                  </small>
+               </h2>
+            </div>
+            <div class="modal-body">
+               @*corpo da modal*@
+               <div class="form-horizontal">
+                  @Html.HiddenFor(model => model.TaskId)
+                  @Html.HiddenFor(model => model.UserId)
+                  @Html.HiddenFor(model => model.Data)
+
+                  <div class="form-group">
+                     @Html.LabelFor(model => model.DataLancamento, htmlAttributes: new { @class = "control-label col-md-4" })
+                     <div class="col-md-8">
+                        @Html.EditorFor(model => model.DataLancamento, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.DataLancamento, "", new { @class = "text-danger" })
+                     </div>
+                  </div>
+
+                  <div class="form-group">
+                     @Html.LabelFor(model => model.HoraTrabalhada, htmlAttributes: new { @class = "control-label col-md-4" })
+                     <div class="col-md-8">
+                        @Html.EditorFor(model => model.HoraTrabalhada, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.HoraTrabalhada, "", new { @class = "text-danger" })
+                     </div>
+                  </div>
+
+                  <div class="form-group">
+                     <div class="col-md-12">
+                        @Html.TextAreaFor(model => model.Historico, rows: 10, columns: 10, htmlAttributes: new { @class = "form-control", placeholder="historico da tarefa" })
+                        @Html.ValidationMessageFor(model => model.Historico, "", new { @class = "text-danger" })
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               @*botões da modal*@
+               <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+               <button type="submit" class="btn btn-success">Aprovar</button>
+            </div>
+         </div>
+      </div>
+   </div>
+}

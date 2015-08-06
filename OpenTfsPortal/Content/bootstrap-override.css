@@ -1,0 +1,169 @@
+ul.lista-de-tarefas {
+    padding-left: 10px;
+}
+ul.lista-de-tarefas li, ol.lista-de-tarefas li{
+	margin:20px 0 20px 0;
+    list-style: none;
+}
+ul.lista-de-tarefas li a{
+	text-decoration:none !important;
+}
+
+ul.lista-de-tarefas li a span{
+	text-decoration:none !important;
+    font-size: 10pt;
+    margin-right: 10px;
+}
+
+.lista-de-tarefas.text-danger a:hover{
+	color:#d9534f;
+}
+
+.lista-de-tarefas.text-danger a span{
+	background-color:#d9534f;
+}
+
+.lista-de-tarefas.text-warning a:hover{
+	color:#f0ad4e;
+}
+
+.lista-de-tarefas.text-warning a span{
+	background-color:#f0ad4e;
+}
+
+.lista-de-tarefas.text-success a:hover{
+	color:#5cb85c;
+}
+
+.lista-de-tarefas.text-success a span{
+	background-color:#5cb85c;
+}
+
+.table th,
+.table td {
+    border: 1px solid #9ea9b4 !important;
+    font-size: 14px;
+}
+.table th, .table th:hover{
+    background:#c8d2dc !important;
+    color:#3a648b !important;
+}
+    
+
+.nav>li, .nav-bar>li{
+	font-size:15px !important;
+}
+
+.has-error .form-control{
+	background-color:#e4bbba;
+	border-color:#e4bbba;
+}
+
+
+
+.panel-group .panel-heading a:hover{
+	text-decoration:none !important;
+}
+/*
+.panel-group .panel .panel-collapse .panel-body .table tr.default{
+	background-color:#73808e;
+}
+
+.panel-group .panel .panel-collapse .panel-body .table tr td a{
+	text-decoration:none !important;
+}
+    */
+
+.form-control {
+  /*color: #fff;*/
+  opacity: 1;
+}
+
+.dropdown-header { 
+	font-size: 14px;
+	color: #3a648b;
+	font-weight:bold;
+}
+
+.fonte-grande{
+    font-size:30px !important;
+    
+}
+
+
+
+
+
+/* Código para o Branch - OS-2784-POPUP-APROVACAO */
+
+.fonte-media{
+    font-size:20px !important;
+}
+
+.botoes-aprovacao-tarefa {
+    margin-bottom:3px; 
+}
+
+.modal-title,  .modal-body p{
+    color:#ffffff;
+}
+
+.panel-group .panel-heading:hover{
+	background-color:#96c1fb;
+    color:#152534;
+}
+
+#painel-collapse-projeto > a,#painel-collapse-projeto > a:hover {
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.panel-group .panel .panel-collapse .panel-body .table tr:hover td{
+	background-color:#96c1fb !important;
+}
+
+.panel-group .panel .panel-collapse .panel-body .table tr:hover td a{
+	color:#3a648b;
+}
+
+
+
+
+#container-grafico-da-sprint {
+	width:140px; 
+	height:140px;
+    margin-top:-40px;
+}
+		
+#grafico-da-sprint-grafico {
+	width:140px; 
+	height:140px;
+}
+		
+#grafico-da-sprint-legenda{
+	color:white;
+	line-height:0,5em;
+	position:absolute;
+	margin-top:60px;
+	margin-left:54px;
+	z-index:1;
+	text-align:center;
+}
+
+
+#grafico-da-sprint-legenda-dia{
+	font-size:30px;
+    display:block;
+    margin-top:15px;
+}
+		
+#grafico-da-sprint-legenda-texto{
+	font-size:10px;
+    display:block;
+    margin-top:-30px;
+}
+
+.label-nigro {
+background-color:#000 !important;
+
+}

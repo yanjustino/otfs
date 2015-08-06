@@ -1,0 +1,201 @@
+﻿@model OpenTfsPortal.Models.ProjectManagementViewModel
+@{
+   ViewBag.Title = "Index";
+}
+
+
+<div class="container">
+   <div class="page-header" id="banner">
+      <div class="row">
+         <div class="col-lg-8 col-md-7 col-sm-6">
+            <h2>
+               <span class="glyphicon glyphicon-th"></span>&nbsp;PROJETOS <br />
+            </h2>
+         </div>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-lg-7">
+         <h4>
+            GRÁFICO DE SOLICITAÇÕES <br />
+            <small>
+               QTDE. POR PROJETO DA ITERAÇÃO CORRENTE
+            </small>
+         </h4>
+         <div id="columnchart_values" style="width: 100%; height: 100%;"></div>
+      </div>
+      <div class="col-lg-5">
+         <h4>
+
+            GRÁFICO DE SOLICITAÇÕES <br />
+            <small>
+               PERC. POR STATUS DA ITERAÇÃO CORRENTE
+            </small>
+         </h4>
+         <div id="piechart_3d" style="width: 100%; height: 400px;"></div>
+      </div>
+   </div>
+   <br />
+   <br />
+   <div class="row">
+      <div class="col-lg-12">
+         @foreach (var project in Model.Projects)
+         {
+            var currentIteration = @project.RecuperarIteracaoCorrente();
+            var lastIteration = @project.RecuperarIteracaoAnterior();
+
+
+            <div class="row">
+               <div class="col-lg-4">
+                  <h4>
+                     @project.Name.ToUpper() <br />
+                  </h4>
+
+                  <small>ITERAÇÃO CORRENTE</small><br />
+                  <a href="@Url.Action(@Model.GetUserRoute(), "Dashboard",
+                        new {
+                           projectId = @currentIteration.ProjectId.Id,
+                           path = @currentIteration.Path,
+                           inicio = @currentIteration.StartDate,
+                           fim = @currentIteration.EndDate
+                        })">
+                     @currentIteration.Name
+                  </a>
+
+                  <br />
+                  <small>ULTIMA ITERAÇÃO </small><br />
+                  @if (lastIteration != null)
+                  {
+                     <a href="@Url.Action(@Model.GetUserRoute(), "Dashboard",
+                        new {
+                           projectId = @lastIteration.ProjectId.Id,
+                           path = @lastIteration.Path,
+                           inicio = @lastIteration.StartDate,
+                           fim = @lastIteration.EndDate
+                        })">
+                        @lastIteration.Name
+                     </a>
+                  }
+               </div>
+               <div class="col-lg-3">
+                  <h4>
+                     SOLICITAÇÕES <br />
+                     <small>
+                        <a href="@Url.Action(@Model.GetUserRoute(), "Dashboard",
+                        new {
+                           projectId = @currentIteration.ProjectId.Id,
+                           path = @currentIteration.Path,
+                           inicio = @currentIteration.StartDate,
+                           fim = @currentIteration.EndDate
+                        })">
+                           @currentIteration.Name
+                        </a>
+                     </small>
+                  </h4>
+                  <table style="width: 100%">
+                     <tr>
+                        <td>pendentes</td>
+                        <td>andamento</td>
+                        <td>concluídas</td>
+                     </tr>
+                     <tr>
+                        <td><h3>@currentIteration.Metrics.PendingBacklogItens</h3></td>
+                        <td><h3>@currentIteration.Metrics.StartedBacklogItens</h3></td>
+                        <td><h3>@currentIteration.Metrics.FinishedBacklogItens</h3></td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="col-lg-4">
+                  <h4>
+                     MÉTRICAS
+                  </h4>
+                  <small>pendente</small>
+                  <div class="progress" style="margin:0">
+                     <div class="progress-bar progress-bar-danger"
+                          role="progressbar" aria-valuenow="@currentIteration.Metrics.PendingBacklogItensPercent"
+                          aria-valuemin="0" aria-valuemax="100"
+                          style="width: @currentIteration.Metrics.PendingBacklogItensPercent%">
+                     </div>
+                  </div>
+                  <small>andamento</small>
+                  <div class="progress" style="margin:0">
+                     <div class="progress-bar progress-bar-info"
+                          role="progressbar" aria-valuenow="@currentIteration.Metrics.StartedBacklogItensPercent"
+                          aria-valuemin="0" aria-valuemax="100"
+                          style="width: @currentIteration.Metrics.StartedBacklogItensPercent%">
+                     </div>
+                  </div>
+                  <small>concluido</small>
+                  <div class="progress" style="margin:0">
+                     <div class="progress-bar progress-bar-success"
+                          role="progressbar" aria-valuenow="@currentIteration.Metrics.FinishedBacklogItensPercent"
+                          aria-valuemin="0" aria-valuemax="100"
+                          style="width: @currentIteration.Metrics.FinishedBacklogItensPercent%">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <hr />
+            </div>
+         }
+      </div>
+   </div>
+</div>
+<script type="text/javascript">
+   google.load("visualization", "1.1", { packages: ["corechart"] });
+   google.setOnLoadCallback(drawStuff);
+
+   function drawStuff() {
+      var data = google.visualization.arrayToDataTable([
+         @{
+            @:["Element", "Density", { role: "style" } ],
+            foreach (var project in Model.Projects)
+            {
+               var iteration = project.RecuperarIteracaoCorrente();
+               
+               @:["@project.Name", @iteration.Metrics.TotalBacklogItens, "#4285F4"],
+            }
+         }
+      ]);
+
+      var data2 = google.visualization.arrayToDataTable([
+         @{
+               var pendente = 0d;
+               var andamento = 0d;
+               var concluido = 0d;
+
+               foreach (var project in Model.Projects)
+               {
+                  var iteration = project.RecuperarIteracaoCorrente();
+
+                  pendente += iteration.Metrics.PendingBacklogItens;
+                  andamento += iteration.Metrics.StartedBacklogItens;
+                  concluido += iteration.Metrics.FinishedBacklogItens;
+               }
+               @:['Task', 'Hours per Day'],
+               @:['Pendente',@pendente],
+               @:['Andamento', @andamento],
+               @:['Concluido', @concluido]
+            }
+      ]);
+
+      var options = {
+         chartArea: { left: 0 },
+         height: 400,
+         bar: { groupWidth: "75%" },
+         legend: { position: "none" },
+      };
+
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(data, options);
+
+      var options2 = {
+         is3D: true,
+         colors: ['#e74c3c', '#4285F4', '#18bc9c']
+      };
+
+      var chart2 = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+      chart2.draw(data2, options2);
+   };
+</script>

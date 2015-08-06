@@ -1,0 +1,1 @@
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.IdentityAccess.Data\obj\x86\Debug\Otfs.IdentityAccess.Data.csprojResolveAssemblyReference.cache

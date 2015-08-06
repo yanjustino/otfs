@@ -1,0 +1,33 @@
+﻿@model Otfs.ProjectManagement.Core.Domain.Model.BacklogItem.OtfsBacklogItem
+
+@{
+   var iteration = new { backlogItemId = @Model.BacklogItemId.Id, iteration = @Model.Iteration.Path };
+}
+
+@*botão de reprovação*@
+@using (Html.BeginForm("Deny", "Dashboard", @iteration, FormMethod.Post))
+{
+    <div class="modal fade" id="ModalReprovacao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h2 class="modal-title" id="myModalLabel">
+                        @*título da tarefa*@
+                        @Model.BacklogItemId.Id : @Model.Title
+                    </h2>
+                </div>
+                <div class="modal-body">
+                    @*corpo da modal*@
+                    <p>Digite o motivo da reprovação:</p>
+                    <textarea id="motivo" name="motivo" class="form-control"></textarea>
+                </div>
+                <div class="modal-footer">
+                    @*botões da modal*@
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-danger">Reprovar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}

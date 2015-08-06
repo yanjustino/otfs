@@ -1,0 +1,4 @@
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.IdentityAccess.Core\bin\x64\Debug\Otfs.IdentityAccess.Core.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.IdentityAccess.Core\bin\x64\Debug\Otfs.IdentityAccess.Core.pdb
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.IdentityAccess.Core\obj\x64\Debug\Otfs.IdentityAccess.Core.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Otfs.IdentityAccess.Core\obj\x64\Debug\Otfs.IdentityAccess.Core.pdb

@@ -1,0 +1,46 @@
+﻿@model OpenTfsPortal.Models.DashboardDesenvolvedorViewModel
+
+@{
+   ViewBag.Title = "Dashboard Desenvolvedor";
+   Layout = "~/Views/Shared/_Dashboard.cshtml";
+
+   var dicTarefas = Model.AgruparTarefasPorProjeto();
+}
+
+
+@section menu{
+   <div>
+      <a href="@Url.Action("DashboardHoras", "Produtividade")">
+         <span class="glyphicon glyphicon-calendar"></span>&nbsp;
+         Quadro de Horas
+      </a>
+   </div>
+}
+
+<section class="dashboard-content">
+
+   @foreach (var projeto in dicTarefas)
+   {
+      <article>
+         <h4>@projeto.Key</h4>
+         <hr />
+         @foreach (var task in dicTarefas[projeto.Key])
+         {
+            var lancamento = new OpenTfsPortal.Models.LancamentoHoraViewModel()
+            {
+               UserId = Model.UserId,
+               TaskId = task.TaskId.Id,
+               Data = DateTime.Today,
+               DataLancamento = DateTime.Today,
+               Title = task.Title
+            };
+
+            @Html.Partial("Desenvolvedor/_task_panel", task)
+            @Html.Partial("Desenvolvedor/_hora", lancamento)
+         }
+      </article>
+   }
+</section>
+@section Scripts {
+   @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,34 @@
+﻿<html lang="pt-br">
+<head>
+   <meta charset="utf-8">
+   <title></title>
+   <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+   <link rel="stylesheet" href="~/Content/dashboard.css">
+   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+   <div class="dasboard-container">
+      <div class="dashboard-header">
+         <div style="color:#fff;">
+            <span class="glyphicon glyphicon-user"></span>
+            @User.Identity.Name
+         </div>
+         @RenderSection("menu", false)
+         @using (Html.BeginForm("Logout", "IdentityAccess", FormMethod.Post, new { id = "form-logout" }))
+         {
+            <a href="#" onclick="document.getElementById('form-logout').submit();">
+               <span class="glyphicon glyphicon-log-out"></span>&nbsp;
+               Sair
+            </a>
+         }
+      </div>
+      <section class="dashboard">
+         @RenderBody()
+      </section>
+      @Scripts.Render("~/bundles/jquery")
+      @Scripts.Render("~/bundles/bootstrap")
+      @RenderSection("scripts", required: false)
+   </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Common\bin\Debug\Common.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Common\bin\Debug\Common.pdb
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Common\obj\Debug\Common.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Common\obj\Debug\Common.pdb
+\\psf\Home\Documents\projetos\dashboard.set.govrn\SharedKernel\Common\bin\Debug\Common.dll
+\\psf\Home\Documents\projetos\dashboard.set.govrn\SharedKernel\Common\bin\Debug\Common.pdb
+\\psf\Home\Documents\projetos\dashboard.set.govrn\SharedKernel\Common\obj\Debug\Common.dll
+\\psf\Home\Documents\projetos\dashboard.set.govrn\SharedKernel\Common\obj\Debug\Common.pdb

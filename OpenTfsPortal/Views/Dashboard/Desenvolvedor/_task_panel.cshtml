@@ -1,0 +1,29 @@
+﻿@model Otfs.ProjectManagement.Core.Domain.Model.Task.OtfsTask
+
+@{
+   var modelid = "#ModelLancarHora" + Model.TaskId.Id;
+}
+
+<div class="panel panel-info">
+   <div class="panel-heading">
+      <h3 class="panel-title">
+         <span class="glyphicon glyphicon-tag"></span>
+         @Model.TaskId.Id
+      </h3>
+   </div>
+   <div class="panel-body">
+      @Model.Title
+      <p class="pull-right">
+         <h4>
+            <span class="label label-default">@Model.Status</span>
+            <a href="#" class="btn btn-link" data-toggle="modal" data-target="@modelid">
+               <span class="glyphicon glyphicon-time"></span>
+            </a>
+            <a href="@Url.Action("ListarHoras", "Produtividade", new { taskId = @Model.TaskId.Id, title = @Model.Title })" c class="btn btn-link">
+               <span class="glyphicon glyphicon-list"></span>
+            </a>
+         </h4>
+      </p>
+   </div>
+</div>
+

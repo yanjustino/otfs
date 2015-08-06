@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Otfs.IdentityAccess.Core.Domain.Model.Grupo">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain.Model\Grupo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otfs.IdentityAccess.Core.Domain.Model.UsuarioAutorizado">
+    <Position X="3.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAIAAAAAAAAABAAAAAAAAAAAAAAAAAAAUAAAA=</HashCode>
+      <FileName>Domain.Model\UsuarioAutorizado.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Grupos" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Otfs.IdentityAccess.Core.Application.IdentityAccessServices">
+    <Position X="0.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAACCAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\IdentityAccessServices.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_repository" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Otfs.IdentityAccess.Core.Application.Command.AutenticacaoCommand">
+    <Position X="6.5" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAIAAAA=</HashCode>
+      <FileName>Application\Command\AutenticacaoCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Otfs.IdentityAccess.Core.Domain.Model.Interfaces.IIdentityAccessRepository">
+    <Position X="3.75" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Domain.Model\Interfaces\IIdentityAccessRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

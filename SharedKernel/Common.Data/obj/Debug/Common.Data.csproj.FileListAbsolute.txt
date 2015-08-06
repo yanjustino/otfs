@@ -1,0 +1,16 @@
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Common.Data\bin\Debug\Common.Data.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Common.Data\bin\Debug\Common.Data.pdb
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Common.Data\bin\Debug\Newtonsoft.Json.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Common.Data\bin\Debug\System.Net.Http.Formatting.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Common.Data\bin\Debug\System.Web.Http.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Common.Data\bin\Debug\System.Net.Http.Formatting.xml
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Common.Data\bin\Debug\System.Web.Http.xml
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Common.Data\obj\Debug\Common.Data.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Common.Data\obj\Debug\Common.Data.dll
+C:\inetpub\wwwroot\projetos_git\dashboard.set.govrn\dashboard.set.govrn\Common.Data\obj\Debug\Common.Data.pdb
+\\psf\Home\Documents\projetos\dashboard.set.govrn\SharedKernel\Common.Data\bin\Debug\Common.Data.dll
+\\psf\Home\Documents\projetos\dashboard.set.govrn\SharedKernel\Common.Data\bin\Debug\Common.Data.pdb
+\\psf\Home\Documents\projetos\dashboard.set.govrn\SharedKernel\Common.Data\bin\Debug\Newtonsoft.Json.dll
+\\psf\Home\Documents\projetos\dashboard.set.govrn\SharedKernel\Common.Data\obj\Debug\Common.Data.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\projetos\dashboard.set.govrn\SharedKernel\Common.Data\obj\Debug\Common.Data.dll
+\\psf\Home\Documents\projetos\dashboard.set.govrn\SharedKernel\Common.Data\obj\Debug\Common.Data.pdb
